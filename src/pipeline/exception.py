@@ -6,7 +6,7 @@ def error_massage_detail(error,error_details:sys):
     file_name,exc_tb.tb_lineno,str(error)
     return error_massage
 
-class CustomEeption(Exception):
+class CustomException(Exception):
     def __init__(self,error_massage,error_details:sys):
         super().__init__(error_massage)
         self.error_massage=error_massage_detail(error_massage,error_details=error_details)
